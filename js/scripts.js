@@ -3,5 +3,5 @@ var leapYear = function(year) {
     return true;
   } else {
   return false;
-}
+  }
 };
