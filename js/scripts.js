@@ -8,9 +8,12 @@ $(document).ready(function() {
     var result = leapYear(year);
 
     $(".year").text(year);
+
     if (!result) {
       $(".not").text("not");
-    }
+    } else if (result) {
+      $(".not").text("");
+    };
 
     $("#result").show();
     event.preventDefault();
